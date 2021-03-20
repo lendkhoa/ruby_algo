@@ -1,5 +1,5 @@
 module Tree
-  class Tree_Node
+  class TreeNode
     attr_accessor :val, :left, :right, :type
     def initialize(val = 0, _left = nil, _right = nil)
       @val = val
@@ -9,7 +9,7 @@ module Tree
     end
   end
 
-  class Binary_Tree
+  class BinaryTree
     attr_accessor :root
     def initialize(_root = nil)
       @root = _root
