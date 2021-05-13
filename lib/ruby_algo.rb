@@ -18,7 +18,9 @@ def main
   #tree.postorder_traverse(tree.root)
   #DynamicProgramming.word_break_examples
   #DFS.valid_bst_examples
-  DFS.lca_examples
+  #DFS.lca_examples
+  DynamicProgramming.palindrome_partitioning
+
 end
 
 main

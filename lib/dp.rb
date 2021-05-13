@@ -38,4 +38,28 @@ module DynamicProgramming
     end
     false
   end
+
+  # Given a string s, partition s such a way that every substring
+  # of the partition is a palindrom
+  # input: aaa
+  # [["aa", "b"], ["a", "a", "b"]]
+  def palindrome_partitioning
+    puts "#{is_palindrome("aaa")}"
+    puts "#{is_palindrome("aab")}"
+  end
+
+  # return true if s is a palindrom
+  # aba, aaa
+  def is_palindrome(s)
+    left = 0
+    right = s.length - 1
+    while left < right
+      if s[left] != s[right]
+        return false;
+      end
+      left += 1;
+      right -= 1;
+    end
+    return true;
+  end
 end
